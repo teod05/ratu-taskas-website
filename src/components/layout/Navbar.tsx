@@ -39,10 +39,10 @@ const Navbar = () => {
             ))}
             <a 
               href="tel:+37068830112" 
-              className="btn-primary flex items-center gap-2"
+              className="bg-brand-red hover:bg-red-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition-all duration-300 flex items-center gap-2 pulse-animation"
             >
-              <PhoneCall size={18} />
-              <span>Skambinti</span>
+              <PhoneCall size={20} className="animate-pulse" />
+              <span className="font-medium">Skambinti</span>
             </a>
           </div>
           
@@ -76,10 +76,10 @@ const Navbar = () => {
               ))}
               <a 
                 href="tel:+37068830112" 
-                className="btn-primary flex items-center justify-center gap-2 mt-2"
+                className="bg-brand-red hover:bg-red-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition-all duration-300 flex items-center justify-center gap-2 animate-pulse"
               >
-                <PhoneCall size={18} />
-                <span>Skambinti dabar</span>
+                <PhoneCall size={20} />
+                <span className="font-medium">Skambinti dabar</span>
               </a>
             </div>
           </div>

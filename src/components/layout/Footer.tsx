@@ -95,10 +95,10 @@ const Footer = () => {
       <div className="md:hidden fixed bottom-4 right-4 z-40">
         <a 
           href="tel:+37068830112" 
-          className="bg-brand-red hover:bg-red-600 text-white p-3 rounded-full shadow-lg flex items-center justify-center"
+          className="bg-brand-red hover:bg-red-600 text-white p-4 rounded-full shadow-lg flex items-center justify-center animate-pulse"
           aria-label="Skambinti dabar"
         >
-          <PhoneCall size={24} />
+          <PhoneCall size={28} />
         </a>
       </div>
     </footer>

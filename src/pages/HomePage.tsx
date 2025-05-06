@@ -1,8 +1,6 @@
-
 import { Link } from 'react-router-dom';
 import Hero from '../components/common/Hero';
 import ServiceCard from '../components/common/ServiceCard';
-import TireAnimation from '../components/animations/TireAnimation';
 import CarAnimation from '../components/animations/CarAnimation';
 import { Wrench, Car, Package } from 'lucide-react';
 import { useEffect, useState } from 'react';
@@ -39,12 +37,6 @@ const HomePage = () => {
 
   return (
     <div>
-      {showRollingTire && (
-        <div className="fixed top-1/2 left-0 z-50 transform -translate-y-1/2">
-          <TireAnimation size="lg" animate={true} />
-        </div>
-      )}
-      
       <CarAnimation size="md" />
       
       <Hero
@@ -56,7 +48,6 @@ const HomePage = () => {
           <Link to="/kontaktai" className="btn-primary inline-block">
             Susisiekite Dabar
           </Link>
-          <TireAnimation size="md" className="mt-6 md:mt-0" />
         </div>
       </Hero>
       
