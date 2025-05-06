@@ -4,8 +4,20 @@ import Hero from '../components/common/Hero';
 import ServiceCard from '../components/common/ServiceCard';
 import TireAnimation from '../components/animations/TireAnimation';
 import { Wrench, Car, Package } from 'lucide-react';
+import { useEffect, useState } from 'react';
 
 const HomePage = () => {
+  const [showRollingTire, setShowRollingTire] = useState(true);
+  
+  useEffect(() => {
+    // Hide the rolling tire after animation completes
+    const timer = setTimeout(() => {
+      setShowRollingTire(false);
+    }, 3000);
+    
+    return () => clearTimeout(timer);
+  }, []);
+  
   const services = [
     {
       title: 'Padangų Remontas',
@@ -26,6 +38,12 @@ const HomePage = () => {
 
   return (
     <div>
+      {showRollingTire && (
+        <div className="fixed top-1/2 left-0 z-50 transform -translate-y-1/2">
+          <TireAnimation size="lg" animate={true} />
+        </div>
+      )}
+      
       <Hero
         title="Ratų Taškas"
         subtitle="Greitas ir kokybiškas padangų aptarnavimas Klaipėdoje!"
