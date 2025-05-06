@@ -47,7 +47,7 @@ const HomePage = () => {
       <Hero
         title="Ratų Taškas"
         subtitle="Greitas ir kokybiškas padangų aptarnavimas Klaipėdoje!"
-        backgroundImage="https://images.unsplash.com/photo-1578844251758-2f818224654e?ixlib=rb-1.2.1&auto=format&fit=crop&q=80"
+        backgroundImage="/lovable-uploads/4e8a6e19-6958-4198-9b47-afa58e4e8358.png"
       >
         <div className="flex flex-col md:flex-row items-center justify-center gap-6">
           <Link to="/kontaktai" className="btn-primary inline-block">
