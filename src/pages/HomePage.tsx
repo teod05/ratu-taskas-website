@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Hero from '../components/common/Hero';
 import ServiceCard from '../components/common/ServiceCard';
 import TireAnimation from '../components/animations/TireAnimation';
+import CarAnimation from '../components/animations/CarAnimation';
 import { Wrench, Car, Package } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
@@ -43,6 +44,8 @@ const HomePage = () => {
           <TireAnimation size="lg" animate={true} />
         </div>
       )}
+      
+      <CarAnimation size="md" />
       
       <Hero
         title="Ratų Taškas"
