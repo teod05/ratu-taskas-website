@@ -2,6 +2,7 @@
 import { Link } from 'react-router-dom';
 import Hero from '../components/common/Hero';
 import ServiceCard from '../components/common/ServiceCard';
+import TireAnimation from '../components/animations/TireAnimation';
 import { Wrench, Car, Package } from 'lucide-react';
 
 const HomePage = () => {
@@ -30,9 +31,12 @@ const HomePage = () => {
         subtitle="Greitas ir kokybiškas padangų aptarnavimas Klaipėdoje!"
         backgroundImage="https://images.unsplash.com/photo-1578844251758-2f818224654e?ixlib=rb-1.2.1&auto=format&fit=crop&q=80"
       >
-        <Link to="/kontaktai" className="btn-primary inline-block">
-          Susisiekite Dabar
-        </Link>
+        <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+          <Link to="/kontaktai" className="btn-primary inline-block">
+            Susisiekite Dabar
+          </Link>
+          <TireAnimation size="md" className="mt-6 md:mt-0" />
+        </div>
       </Hero>
       
       <section className="section-padding">
